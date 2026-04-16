@@ -6,10 +6,14 @@ import './index.css'
 
 import { createBrowserRouter } from "react-router";
 import { RouterProvider } from "react-router/dom";
-import Mainlayout from './component/Layout/Mainlayout';
-import Homepage from './component/pages/Homepage/Homepage';
-import Timeline from './component/pages/Timeline/Timeline';
-import Status from './component/pages/Status/Status';
+
+
+import Timeline from './Pages/Timeline/Timeline';
+import Status from './Pages/Status/Status';
+import Mainlayout from './Layout/Mainlayout';
+import Homepage from './Pages/Homepage/Homepage';
+
+
 
 const router = createBrowserRouter([
   {
@@ -26,17 +30,20 @@ const router = createBrowserRouter([
         path: "/Timeline",
         Component: Timeline
       },
-
       {
-        path:"/Status",
-        Component:Status
+        path: "/Status",
+        Component: Status
       }
+
+    
       
 
 
      
 
-    ]
+    ],
+
+    errorElement:<Error></Error>
     
   },
 ]);
