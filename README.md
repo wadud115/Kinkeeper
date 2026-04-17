@@ -1,16 +1,41 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+📝 Project Name
 
-Currently, two official plugins are available:
+KeenKeeper
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📖 Short Description
 
-## React Compiler
+KeenKeeper is a modern React-based friend relationship tracking app where users can view friend details, log interactions (Call, Text, Video), and visualize activity through a timeline and analytics dashboard. It helps users stay connected and manage communication habits in a simple and visual way.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+🛠️ Technologies Used
+React.js
+React Router
+Context API
+Tailwind CSS
+Recharts (for Pie Chart)
+React Toastify
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+✨ Key Features
+🔹 1. Friend Interaction Tracking
+
+Users can log interactions like Call, Text, and Video, which are automatically added to a global timeline.
+
+🔹 2. Analytics Dashboard
+
+A donut (ring) pie chart visually shows the percentage distribution of Call, Text, and Video activities.
+
+🔹 3. Instant Notifications
+
+Beautiful toast notifications appear whenever an activity is added to the timeline.
+
+🔹 4. Friend Profile Management
+
+Each friend has a dedicated profile page with details, stats, and quick interaction buttons.
+
+
+
+
+💡 Author
+
+Built with ❤️ by Md Akramul Wadud
