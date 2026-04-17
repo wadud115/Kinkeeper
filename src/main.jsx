@@ -14,6 +14,7 @@ import Mainlayout from './Layout/Mainlayout';
 import Homepage from './Pages/Homepage/Homepage';
 import Frienddetails from './Pages/FriendsDetails/Frienddetails';
 import TimelineProvider from './context/TimelineContext';
+import PieChartPage from './Pages/Analytics/PieChartPage';
 
 // import Frendprovider from './context/frendprovider';
 
@@ -46,7 +47,12 @@ const router = createBrowserRouter([
         Component:Frienddetails ,
         loader: () => fetch("/data.json")
 
-      }
+      },
+
+      {
+  path: "/analytics",
+  element: <PieChartPage />,
+}
 
     
       
