@@ -17,6 +17,7 @@ import TimelineProvider from './context/TimelineContext';
 import PieChartPage from './Pages/Analytics/PieChartPage';
 import { ToastContainer } from 'react-toastify';
 import "react-toastify/dist/ReactToastify.css";
+import ErrorElement from './Pages/Errorelement/Error';
 
 // import Frendprovider from './context/frendprovider';
 
@@ -64,7 +65,7 @@ const router = createBrowserRouter([
 
     ],
 
-    errorElement:<Error></Error>
+    errorElement:<ErrorElement></ErrorElement>
     
   },
 ]);
