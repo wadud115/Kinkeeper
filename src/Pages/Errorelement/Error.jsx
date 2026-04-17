@@ -22,12 +22,12 @@ const ErrorPage = () => {
 
         {/* Buttons */}
         <div className="mt-6 flex flex-col sm:flex-row gap-4 justify-center">
-          <button
+          {/* <button
             onClick={() => window.history.back()}
             className="px-6 py-2 rounded-xl bg-gray-700 hover:bg-gray-600 transition duration-300"
           >
             Go Back
-          </button>
+          </button> */}
 
           <a
             href="/"
