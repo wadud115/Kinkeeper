@@ -1,5 +1,6 @@
 import React from 'react';
 import { NavLink } from 'react-router';
+import { FaHome,  FaClock, FaChartBar } from "react-icons/fa";
 
 const Nabver = () => {
     return (
@@ -7,13 +8,13 @@ const Nabver = () => {
 
             <div className="navbar bg-base-100 shadow-sm">
   <div className="flex-1">
-    <a className="btn btn-ghost text-xl">Keen<span className='text-green-800'>Keeper</span></a>
+    <a className="btn btn-ghost text-xl"><img src="/public/logo.png" alt="" /></a>
   </div>
   <div className="flex-none">
-    <ul className="menu menu-horizontal px-1 font-semibold gap-5">
-      <li><NavLink className={({isActive}) => isActive? "  bg-green-800 text-white" : ""} to={"/"}>Home</NavLink></li>
-      <li><NavLink className={({isActive}) => isActive? " bg-green-800 text-white" : ""} to={"/Timeline"}>Timeline</NavLink></li>
-      <li><NavLink className={({isActive}) => isActive? " bg-green-800 text-white" : ""} to={"/Status"}>Stats</NavLink></li>
+    <ul className="menu menu-horizontal px-1 font-semibold gap-4">
+      <li><NavLink className={({isActive}) => isActive? "  bg-green-800 text-white" : ""} to={"/"}> <FaHome></FaHome> Home</NavLink></li>
+      <li><NavLink className={({isActive}) => isActive? " bg-green-800 text-white" : ""} to={"/Timeline"}> <FaClock></FaClock> Timeline</NavLink></li>
+      <li><NavLink className={({isActive}) => isActive? " bg-green-800 text-white" : ""} to={"/Status"}> <FaChartBar></FaChartBar> Stats</NavLink></li>
       
       
     </ul>
