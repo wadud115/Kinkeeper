@@ -8,12 +8,12 @@ KeenKeeper
 KeenKeeper is a modern React-based friend relationship tracking app where users can view friend details, log interactions (Call, Text, Video), and visualize activity through a timeline and analytics dashboard. It helps users stay connected and manage communication habits in a simple and visual way.
 
 🛠️ Technologies Used
-React.js
-React Router
-Context API
-Tailwind CSS
-Recharts (for Pie Chart)
-React Toastify
+*React.js
+*React Router
+*Context API
+*Tailwind CSS
+*Recharts (for Pie Chart)
+*React Toastify
 
 
 ✨ Key Features
