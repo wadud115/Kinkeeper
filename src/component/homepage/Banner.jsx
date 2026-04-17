@@ -2,8 +2,8 @@ import React from 'react';
 
 const Banner = () => {
     return (
-        <div className='bg-green-500'>
-            <section class="bg-blue-50 py-10 md:py-16 px-4 min-h-screen">
+        <div className=''>
+            <section class=" py-10 md:py-16 px-4 min-h-screen">
 
   <div class="max-w-6xl mx-auto text-center">
 

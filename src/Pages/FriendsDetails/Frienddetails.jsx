@@ -1,7 +1,7 @@
 import { useLoaderData, useParams } from "react-router";
 import { useContext } from "react";
 import { TimelineContext } from "../../context/TimelineContext";
-
+import { toast } from "react-toastify";
 const Frienddetails = () => {
   const { id } = useParams();
   const Friends = useLoaderData();
@@ -125,32 +125,35 @@ const Frienddetails = () => {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
 
-              <button
-                onClick={() =>
-                  addActivity("call", expectedBook.name)
-                }
-                className="bg-gray-100 p-4 rounded hover:bg-gray-200 transition"
-              >
-                📞 Call
-              </button>
+          <button
+  onClick={() => {
+    addActivity("call", expectedBook.name);
+    toast.success("📞 Call added to timeline!");
+  }}
+  className="bg-gray-100 p-4 rounded hover:bg-gray-200 transition"
+>
+  📞 Call
+</button>
 
-              <button
-                onClick={() =>
-                  addActivity("text", expectedBook.name)
-                }
-                className="bg-gray-100 p-4 rounded hover:bg-gray-200 transition"
-              >
-                💬 Text
-              </button>
+<button
+  onClick={() => {
+    addActivity("text", expectedBook.name);
+    toast.info("💬 Text added to timeline!");
+  }}
+  className="bg-gray-100 p-4 rounded hover:bg-gray-200 transition"
+>
+  💬 Text
+</button>
 
-              <button
-                onClick={() =>
-                  addActivity("video", expectedBook.name)
-                }
-                className="bg-gray-100 p-4 rounded hover:bg-gray-200 transition"
-              >
-                🎥 Video
-              </button>
+<button
+  onClick={() => {
+    addActivity("video", expectedBook.name);
+    toast.warning("🎥 Video added to timeline!");
+  }}
+  className="bg-gray-100 p-4 rounded hover:bg-gray-200 transition"
+>
+  🎥 Video
+</button>
 
             </div>
           </div>
